@@ -1,8 +1,8 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-online-miners
-Version:	3.14.1
-Release:	%mkrel 1
+Version:	3.14.3
+Release:	1
 Summary:	Crawls through your online content
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -29,7 +29,7 @@ and SkyDrive.
 %setup -q
 
 %build
-%configure2_5x \
+%configure \
 	--disable-silent-rules \
 	--disable-static
 %make
