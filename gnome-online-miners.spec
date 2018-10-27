@@ -14,8 +14,8 @@ BuildRequires:	pkgconfig(glib-2.0) >= 2.35.1
 BuildRequires:	pkgconfig(goa-1.0) >= 3.2.0
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(libgdata) >= 0.13.3
-BuildRequires:	pkgconfig(tracker-miner-1.0)
-BuildRequires:	pkgconfig(tracker-sparql-1.0)
+BuildRequires:	pkgconfig(tracker-miner-2.0)
+BuildRequires:	pkgconfig(tracker-sparql-2.0)
 BuildRequires:	pkgconfig(zapojit-0.0) >= 0.0.2
 BuildRequires:	pkgconfig(libgfbgraph-0.2)
 BuildRequires:  gnome-common
