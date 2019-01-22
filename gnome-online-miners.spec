@@ -17,7 +17,7 @@ BuildRequires:	pkgconfig(libgdata) >= 0.13.3
 BuildRequires:	pkgconfig(tracker-miner-2.0)
 BuildRequires:	pkgconfig(tracker-sparql-2.0)
 BuildRequires:	pkgconfig(zapojit-0.0) >= 0.0.2
-#BuildRequires:	pkgconfig(libgfbgraph-0.2)
+BuildRequires:	pkgconfig(libgfbgraph-0.2)
 BuildRequires:	gfbgraph-devel
 BuildRequires:  gnome-common
 Requires:	dbus
