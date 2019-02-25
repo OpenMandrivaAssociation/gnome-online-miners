@@ -1,4 +1,5 @@
 removed_sources:
   gnome-online-miners-3.14.1.tar.xz: 3f08f536da43fc6661ed95ad907d79efe531dea8
-sources:
   gnome-online-miners-3.14.3.tar.xz: d0843447c327f34303aaca7ba1e1c5bdca72784d
+sources:
+  gnome-online-miners-3.30.0.tar.xz: efb186579693feb8fd0ed1d07b58997aee0aaef3
