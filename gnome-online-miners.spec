@@ -3,7 +3,7 @@
 
 Name:		gnome-online-miners
 Version:	3.34.0
-Release:	14
+Release:	15
 Summary:	Crawls through your online content
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
