@@ -9,6 +9,11 @@ License:	GPLv2+
 Group:		Graphical desktop/GNOME
 URL:		https://git.gnome.org/browse/gnome-online-miners
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gio-2.0)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.35.1
 BuildRequires:	pkgconfig(goa-1.0) >= 3.2.0
