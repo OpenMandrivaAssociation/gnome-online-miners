@@ -9,6 +9,7 @@ License:	GPLv2+
 Group:		Graphical desktop/GNOME
 URL:		https://git.gnome.org/browse/gnome-online-miners
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Patch0:		gom-port-tracker3.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool-base
@@ -19,11 +20,9 @@ BuildRequires:	pkgconfig(glib-2.0) >= 2.35.1
 BuildRequires:	pkgconfig(goa-1.0) >= 3.2.0
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(libgdata) >= 0.13.3
-BuildRequires:	pkgconfig(tracker-miner-2.0)
-BuildRequires:	pkgconfig(tracker-sparql-2.0)
+BuildRequires:	pkgconfig(tracker-sparql-3.0)
 BuildRequires:	pkgconfig(zapojit-0.0) >= 0.0.2
 BuildRequires:	pkgconfig(libgfbgraph-0.2)
-BuildRequires:	gfbgraph-devel
 BuildRequires:  gnome-common
 Requires:	dbus
 Requires:	grilo-plugins
@@ -34,16 +33,16 @@ content and index them locally in Tracker. It has miners for Flickr, Google
 and SkyDrive.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure \
 	--disable-silent-rules \
 	--disable-static
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 find %{buildroot} -name '*.la' -delete
 
 # Use %%doc instead.
