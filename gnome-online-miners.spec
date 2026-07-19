@@ -36,6 +36,7 @@ and SkyDrive.
 %autosetup -p1
 
 %build
+autoreconf -fiv
 %configure \
 	--disable-silent-rules \
 	--disable-static
